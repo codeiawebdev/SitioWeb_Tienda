@@ -1,0 +1,286 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --custom-bg-01: #000000;
+}
+
+body {
+    font-family: var(--sm-font);
+}
+
+.btn:not(.nav-btns button) {
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.btn:not(.nav-btns button):hover {
+    background-color: var(--custom-bg-01);
+    color: #fff;
+    border-color: var(--custom-bg-01);
+}
+
+.nav-btns .btn .bx {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.custom-bg-primario {
+    background-color: var(--custom-bg-01);
+}
+
+.custom-text-primario {
+    color: var(--custom-bg-01);
+}
+
+/*--------------------------------------------------------------
+# MENU
+--------------------------------------------------------------*/
+
+.navbar {
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+.navbar-brand span {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--custom-bg-01);
+}
+
+/*--------------------------------------------------------------
+# HEADER
+--------------------------------------------------------------*/
+
+#header {
+    background: url(../img/banner/0001.jpg) top/ cover no-repeat;
+    padding-top: 104px;
+}
+
+.carousel-inner h1 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.carousel-inner .btn {
+    border-color: #fff;
+}
+
+.carousel-item .btn:hover {
+    border-color: var(--custom-bg-01);
+}
+
+
+.custom-title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--custom-bg-01);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text-dark.custom-active-filter-btn {
+    background-color: var(--custom-bg-01) !important;
+    color: #fff !important;
+    border-color: var(--custom-bg-01) !important;
+}
+
+.isotope-filter-button-group .btn:hover {
+    color: #fff !important;
+}
+
+/*--------------------------------------------------------------
+  # Spinner
+--------------------------------------------------------------*/
+
+.custom-container-spinner {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.custom-container-spinner .spinner-border {
+    height: 60px;
+    width: 60px;
+}
+
+/*--------------------------------------------------------------
+  # Barra de Desplazamiento
+--------------------------------------------------------------*/
+
+
+/* Oculta la barra de desplazamiento */
+body {
+    scrollbar-width: thin;
+    /* Para navegadores basados en Firefox */
+    scrollbar-color: transparent transparent;
+    /* Para navegadores basados en Firefox */
+    overflow: auto;
+    /* Permite el desplazamiento */
+}
+
+/* Personaliza la apariencia de la barra de desplazamiento para navegadores basados en WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Color del fondo de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    /* Color del pulgar de la barra de desplazamiento */
+}
+
+/*--------------------------------------------------------------
+# SECTION CATALAGO
+--------------------------------------------------------------*/
+
+#catalago .custom-catalago-body .custom-producto-img {
+    height: 431px;
+    object-fit: cover;
+}
+
+#catalago .custom-catalago-body .custom-producto-img img {
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+#catalago .custom-catalago-body .custom-producto-img:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.custom-catalago-body span {
+    top: 20px;
+    right: 20px;
+}
+
+/*--------------------------------------------------------------
+# SECTION ESPECIAL
+--------------------------------------------------------------*/
+
+.ofertas-img span {
+    top: 20px;
+    right: 20px;
+}
+
+.ofertas-list .btn {
+    padding: 8px 20px !important;
+}
+
+.ofertas-img img {
+    width: 395px;
+    height: 498px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    object-fit: cover;
+}
+
+.ofertas-img:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/*--------------------------------------------------------------
+# SECTION OFERTA
+--------------------------------------------------------------*/
+
+#descuento {
+    background: url(../img/oferta/001.jpg) center/cover no-repeat;
+}
+
+#descuento .row{
+    min-height: 60vh;
+}
+
+.descuento-content span{
+    font-size: 28px;
+}
+.descuento-content h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.descuento-content .btn{
+    border-color: transparent!important;
+}
+
+/*--------------------------------------------------------------
+# SECTION SUBSCRIBE
+--------------------------------------------------------------*/
+
+#subscribe {
+    background-color: rgba(179, 179, 179, 0.05);
+}
+#subscribe p{
+    max-width: 600px;
+}
+#subscribe .input-group{
+    max-width: 500px;
+}
+#subscribe .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#subscribe .btn{
+    background-color: #ffffff;
+    color: #000000;
+    border-color: var(--custom-bg-01);
+}
+#subscribe .btn:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/*--------------------------------------------------------------
+# SECTION FOOTER
+--------------------------------------------------------------*/
+
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+footer a{
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+footer a:hover{
+    color: var(--pink)!important;
+}
